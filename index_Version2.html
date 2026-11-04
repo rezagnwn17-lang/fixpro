@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fafafa" />
+  <meta
+    name="description"
+    content="Layanan servis iPhone, iPad, dan MacBook terpercaya di Bali Konsultasikan kerusakan perangkat Apple Anda bersama FIXPRO"
+  />
+  <title>FIXPRO — Servis Apple Terpercaya di Bali</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+          },
+          colors: {
+            ink: "#18181b",
+            muted: "#71717a",
+            canvas: "#fafafa",
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 6rem;
+    }
+
+    body {
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .glass {
+      background: rgba(250, 250, 250, 0.82);
+      -webkit-backdrop-filter: blur(18px);
+      backdrop-filter: blur(18px);
+    }
+
+    .card-shadow {
+      box-shadow: 0 12px 40px rgba(24, 24, 27, 0.045);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-canvas font-sans text-ink">
+  <!-- Navbar -->
+  <header class="glass fixed inset-x-0 top-0 z-50 border-b border-zinc-200/70">
+    <nav
+      class="mx-auto flex h-[68px] max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-12"
+      aria-label="Navigasi utama"
+    >
+      <a href="#" class="flex items-center gap-2.5" aria-label="iService Reza, beranda">
+        <span class="grid h-8 w-8 place-items-center rounded-xl bg-zinc-900 text-white">
+          <i class="ph ph-apple-logo text-lg" aria-hidden="true"></i>
+        </span>
+        <span class="text-sm font-semibold tracking-tight">iService <span class="text-zinc-500">Reza</span></span>
+      </a>
+
+      <div class="hidden items-center gap-8 md:flex">
+        <a href="#layanan" class="text-sm text-zinc-600 transition hover:text-zinc-950">Layanan</a>
+        <a href="#tentang" class="text-sm text-zinc-600 transition hover:text-zinc-950">Tentang</a>
+        <a href="#kontak" class="text-sm text-zinc-600 transition hover:text-zinc-950">Lokasi</a>
+      </div>
+
+      <a
+        href="https://wa.me/6281234567890?text=Halo%20iService%20Reza%2C%20saya%20ingin%20konsultasi%20servis."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 rounded-full bg-zinc-900 px-4 py-2.5 text-xs font-medium text-white transition hover:bg-zinc-700 sm:text-sm"
+      >
+        <i class="ph ph-whatsapp-logo text-base" aria-hidden="true"></i>
+        <span>Hubungi Kami</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="relative overflow-hidden px-5 pb-20 pt-32 sm:px-8 sm:pb-28 sm:pt-40 lg:px-12">
+      <div class="pointer-events-none absolute left-1/2 top-10 -z-10 h-80 w-80 -translate-x-1/2 rounded-full bg-zinc-200/50 blur-3xl sm:h-[30rem] sm:w-[30rem]"></div>
+
+      <div class="mx-auto max-w-5xl text-center">
+        <span class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/70 px-3.5 py-1.5 text-xs font-medium text-zinc-600 shadow-sm">
+          <span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+          Servis Apple terpercaya di Bali
+        </span>
+
+        <h1 class="mx-auto mt-7 max-w-4xl text-4xl font-semibold leading-[1.12] tracking-[-0.055em] sm:text-6xl lg:text-7xl">
+          Perangkat Apple Anda,
+          <span class="text-zinc-400">ditangani dengan tepat.</span>
+        </h1>
+
+        <p class="mx-auto mt-6 max-w-2xl text-base leading-7 text-zinc-600 sm:text-lg sm:leading-8">
+          Solusi servis iPhone, iPad, dan MacBook dengan diagnosis yang jelas,
+          pengerjaan teliti, dan konsultasi yang mudah.
+        </p>
+
+        <div class="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
+          <a
+            href="#layanan"
+            class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-zinc-900 px-6 text-sm font-medium text-white transition hover:bg-zinc-700"
+          >
+            Lihat Katalog
+            <i class="ph ph-arrow-down-right text-base" aria-hidden="true"></i>
+          </a>
+          <a
+            href="https://wa.me/6281234567890?text=Halo%20iService%20Reza%2C%20saya%20ingin%20konsultasi%20servis%20perangkat%20Apple."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-zinc-300 bg-white/70 px-6 text-sm font-medium text-zinc-800 transition hover:border-zinc-400 hover:bg-white"
+          >
+            <i class="ph ph-whatsapp-logo text-lg" aria-hidden="true"></i>
+            Konsultasi WhatsApp
+          </a>
+        </div>
+
+        <div class="mt-14 flex flex-wrap items-center justify-center gap-x-7 gap-y-3 text-xs text-zinc-500 sm:text-sm">
+          <span class="inline-flex items-center gap-2">
+            <i class="ph ph-check-circle text-base text-zinc-700" aria-hidden="true"></i>
+            Diagnosis transparan
+          </span>
+          <span class="inline-flex items-center gap-2">
+            <i class="ph ph-check-circle text-base text-zinc-700" aria-hidden="true"></i>
+            Teknisi berpengalaman
+          </span>
+          <span class="inline-flex items-center gap-2">
+            <i class="ph ph-check-circle text-base text-zinc-700" aria-hidden="true"></i>
+            Konsultasi mudah
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalog -->
+    <section id="layanan" class="bg-white px-5 py-20 sm:px-8 sm:py-28 lg:px-12">
+      <div class="mx-auto max-w-7xl">
+        <div class="mb-10 flex flex-col gap-4 sm:mb-14 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500">Katalog layanan</p>
+            <h2 class="mt-3 text-3xl font-semibold tracking-[-0.045em] sm:text-4xl">
+              Perawatan untuk setiap perangkat.
+            </h2>
+          </div>
+          <p class="max-w-md text-sm leading-6 text-zinc-500 sm:text-right">
+            Pilih perangkat Anda untuk melihat layanan yang tersedia dan konsultasikan estimasi biayanya.
+          </p>
+        </div>
+
+        <div class="grid gap-5 md:grid-cols-3">
+          <!-- iPhone -->
+          <article class="card-shadow rounded-3xl border border-zinc-200/80 bg-canvas p-6 sm:p-7">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-zinc-800 shadow-sm">
+              <i class="ph ph-device-mobile text-2xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="mt-6 text-xl font-semibold tracking-tight">iPhone</h3>
+            <p class="mt-2 text-sm leading-6 text-zinc-500">
+              Perbaikan untuk masalah harian hingga komponen internal.
+            </p>
+            <ul class="mt-6 space-y-3 border-t border-zinc-200 pt-5 text-sm text-zinc-700">
+              <li class="flex items-center gap-3"><i class="ph ph-check text-zinc-400" aria-hidden="true"></i>Ganti baterai</li>
+              <li class="flex items-center gap-3"><i class="ph ph-check text-zinc-400" aria-hidden="true"></i>LCD dan layar</li>
+              <li class="flex items-center gap-3"><i class="ph ph-check text-zinc-400" aria-hidden="true"></i>Logic board</li>
+              <li class="flex items-center gap-3"><i class="ph ph-check text-zinc-400" aria-hidden="true"></i>Kamera dan konektor</li>
+            </ul>
+            <a
+              href="https://wa.me/6281234567890?text=Halo%20iService%20Reza%2C%20saya%20ingin%20menanyakan%20harga%20servis%20iPhone."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-7 inline-flex items-center gap-2 text-sm font-medium text-zinc-900 transition hover:text-zinc-500"
+            >
+              Cek harga iPhone <i class="ph ph-arrow-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <!-- iPad -->
+          <article class="card-shadow rounded-3xl border border-zinc-200/80 bg-canvas p-6 sm:p-7">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-zinc-800 shadow-sm">
+              <i class="ph ph-device-tablet text-2xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="mt-6 text-xl font-semibold tracking-tight">iPad</h3>
+            <p class="mt-2 text-sm leading-6 text-zinc-500">
+              Kembalikan kenyamanan menggunakan iPad Anda.
+            </p>
+            <ul class="mt-6 space-y-3 border-t border-zinc-200 pt-5 text-sm text-zinc-700">
+              <li class="flex items-center gap-3"><i class="ph ph-check text-zinc-400" aria-hidden="true"></i>Ganti baterai</li>
+              <li class="flex items-center gap-3"><i class="ph ph-check text-zinc-400" aria-hidden="true"></i>LCD dan touchscreen</li>
+              <li class="flex items-center gap-3"><i class="ph ph-check text-zinc-400" aria-hidden="true"></i>Perbaikan konektor</li>
+              <li class="flex items-center gap-3"><i class="ph ph-check text-zinc-400" aria-hidden="true"></i>Diagnosis perangkat</li>
+            </ul>
+            <a
+              href="https://wa.me/6281234567890?text=Halo%20iService%20Reza%2C%20saya%20ingin%20menanyakan%20harga%20servis%20iPad."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-7 inline-flex items-center gap-2 text-sm font-medium text-zinc-900 transition hover:text-zinc-500"
+            >
+              Cek harga iPad <i class="ph ph-arrow-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <!-- MacBook -->
+          <article class="card-shadow rounded-3xl border border-zinc-200/80 bg-canvas p-6 sm:p-7">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-zinc-800 shadow-sm">
+              <i class="ph ph-laptop text-2xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="mt-6 text-xl font-semibold tracking-tight">MacBook</h3>
+            <p class="mt-2 text-sm leading-6 text-zinc-500">
+              Dukungan servis untuk MacBook Air dan MacBook Pro.
+            </p>
+            <ul class="mt-6 space-y-3 border-t border-zinc-200 pt-5 text-sm text-zinc-700">
+              <li class="flex items-center gap-3"><i class="ph ph-check text-zinc-400" aria-hidden="true"></i>Ganti baterai</li>
+              <li class="flex items-center gap-3"><i class="ph ph-check text-zinc-400" aria-hidden="true"></i>Layar dan keyboard</li>
+              <li class="flex items-center gap-3"><i class="ph ph-check text-zinc-400" aria-hidden="true"></i>Logic board</li>
+              <li class="flex items-center gap-3"><i class="ph ph-check text-zinc-400" aria-hidden="true"></i>Diagnosis dan perawatan</li>
+            </ul>
+            <a
+              href="https://wa.me/6281234567890?text=Halo%20iService%20Reza%2C%20saya%20ingin%20menanyakan%20harga%20servis%20MacBook."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-7 inline-flex items-center gap-2 text-sm font-medium text-zinc-900 transition hover:text-zinc-500"
+            >
+              Cek harga MacBook <i class="ph ph-arrow-right" aria-hidden="true"></i>
+            </a>
+          </article>
+        </div>
+
+        <p class="mt-6 text-xs leading-5 text-zinc-400">
+          Harga dan ketersediaan layanan bergantung pada model serta kondisi perangkat. Hubungi kami untuk estimasi.
+        </p>
+      </div>
+    </section>
+
+    <!-- About / contact callout -->
+    <section id="tentang" class="px-5 py-20 sm:px-8 sm:py-24 lg:px-12">
+      <div class="mx-auto max-w-5xl rounded-3xl bg-zinc-900 px-6 py-12 text-center text-white sm:px-12 sm:py-16">
+        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-400">Butuh bantuan?</p>
+        <h2 class="mx-auto mt-4 max-w-2xl text-3xl font-semibold tracking-[-0.045em] sm:text-4xl">
+          Ceritakan kendala perangkat Anda.
+        </h2>
+        <p class="mx-auto mt-4 max-w-xl text-sm leading-6 text-zinc-300">
+          Kami siap membantu memberikan informasi awal dan estimasi servis melalui WhatsApp.
+        </p>
+        <a
+          href="https://wa.me/6281234567890?text=Halo%20iService%20Reza%2C%20saya%20ingin%20konsultasi%20mengenai%20perangkat%20Apple%20saya."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-white px-6 text-sm font-medium text-zinc-900 transition hover:bg-zinc-200"
+        >
+          <i class="ph ph-whatsapp-logo text-lg" aria-hidden="true"></i>
+          Konsultasi sekarang
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="kontak" class="border-t border-zinc-200 bg-white px-5 py-8 sm:px-8 lg:px-12">
+    <div class="mx-auto flex max-w-7xl flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+      <div>
+        <a href="#" class="text-sm font-semibold tracking-tight">FIXPRO</a>
+        <p class="mt-1 text-xs text-zinc-500">Servis perangkat Apple di Bali</p>
+      </div>
+
+      <div class="flex flex-wrap gap-x-5 gap-y-2 text-xs text-zinc-500">
+        <a href="#layanan" class="transition hover:text-zinc-900">Layanan</a>
+        <a
+          href="https://wa.me/6281234567890?text=Halo%20iService%20Reza."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="transition hover:text-zinc-900"
+        >WhatsApp</a>
+        <span>Bali, Indonesia</span>
+      </div>
+
+      <p class="text-xs text-zinc-400">
+        © <span id="year">2026</span>  FIXPRO Hak cipta dilindungi.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
